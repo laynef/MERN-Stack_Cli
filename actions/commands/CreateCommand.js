@@ -61,6 +61,7 @@ var CreateCommand = function(name) {
         "mongoose": "^4.7.6",
         "morgan": "^1.7.0",
         "react": "^15.4.1",
+        "react-bootstrap": "^0.30.7",
         "react-dom": "^15.4.1",
         "react-redux": "^4.4.6",
         "react-router": "^3.0.0",
