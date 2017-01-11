@@ -5,7 +5,6 @@ const io = require('socket.io')(server)
 const parser = require('body-parser')
 const morgan = require('morgan')
 const routes = require('./routes')
-const auths = require('./auth')
 const cors = require('cors')
 const config = require('../config')
 const mongoose = require('mongoose')
@@ -40,7 +39,6 @@ db.once('open', () => {
 app.get('/', (req, res) => { res.sendFile('index.html') })
 
 app.use('/api', routes) // when you add api routes in routes.js
-app.use('/auth', auths) // when you add api routes in routes.js
 
 // Web socket on connection 
 io.on('connection', (socket) => {
