@@ -26,7 +26,7 @@ var StartUp = function(commandPattern, args, flags) {
         commanderInCharge(PageCommand);
         break;      
       case 'secret':
-        commanderInCharge(PageCommand);
+        commanderInCharge(SecretCommand);
         break;
       default:
         commanderInCharge(PrintDocCommand);
