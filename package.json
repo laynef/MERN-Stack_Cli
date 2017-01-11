@@ -15,7 +15,7 @@
   "homepage": "https://github.com/laynefaler/MERN-Stack_Cli#readme",
   "preferGlobal": true,
   "bin": {
-    "rens": "./actions/index.js"
+    "mern": "./actions/index.js"
   },
   "dependencies": {
     "jsonfile": "^2.4.0",
