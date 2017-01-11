@@ -1,0 +1,24 @@
+{
+  "name": "mern-stack-cli",
+  "version": "1.0.0",
+  "description": "A RENS Stack Cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laynefaler/MERN-Stack_Cli.git"
+  },
+  "keywords": [],
+  "author": "Layne Faler <laynefaler>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laynefaler/MERN-Stack_Cli/issues"
+  },
+  "homepage": "https://github.com/laynefaler/MERN-Stack_Cli#readme",
+  "preferGlobal": true,
+  "bin": {
+    "rens": "./actions/index.js"
+  },
+  "dependencies": {
+    "jsonfile": "^2.4.0",
+    "ncp": "^2.0.0"
+  }
+}
