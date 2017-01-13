@@ -30,7 +30,7 @@ module.exports = {
     },
     htmlLoader: {
         ignoreCustomFragments: [/\{\{.*?}}/],
-        root: path.resolve(__dirname, '/public'),
+        root: path.resolve(__dirname + '/public'),
         attrs: ['img:src', 'link:href']
     },
     plugins: [
