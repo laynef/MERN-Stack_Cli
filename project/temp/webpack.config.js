@@ -1,6 +1,7 @@
 // Do not change
 // at all ....
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const path = require('path')
 
 module.exports = {
     entry: "./app/Root.jsx",
