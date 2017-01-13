@@ -4,7 +4,10 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 
 module.exports = {
-    entry: "./app/Root.jsx",
+  entry: [
+      "babel-polyfill",
+      "./app/Root.jsx"
+  ],
    output: {
         filename: "public/bundle.js"
     },
@@ -15,7 +18,8 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/,
                 loader: 'babel',
                 query: {
-                    presets: ['react', 'es2015']
+                    presets: ['react', 'stage-0', 'es2015'],
+                    plugins: ['transform-runtime']
                 }
             },
             {
