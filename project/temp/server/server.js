@@ -11,6 +11,7 @@ const mongoose = require('mongoose')
 const cookieParser = require('cookie-parser')
 const flash = require('express-flash')
 const session = require('express-session')
+const fs = require('fs')
 
 // port settings
 let port = process.env.PORT || 3000
@@ -25,6 +26,7 @@ server.listen(port, () => {
 app.use(express.static('public'))
 app.use(cors())
 app.use(morgan('dev'))
+app.use(parser.urlencoded({ extended: true}))
 app.use(parser.json())
 app.use(cookieParser())
 
@@ -42,10 +44,10 @@ app.use('/api', routes) // when you add api routes in routes.js
 
 // Web socket on connection 
 io.on('connection', (socket) => {
-    io.emit('this', { will: 'be received by everyone' })
-
-    // disconnect the websocket when user leaves
-    socket.on('disconnect',  () => {
-        io.emit('user disconnected')
+    fs.watch(__dirname + '/../', {recursive: true}, (e, o) => {
+        if (e === 'rename' || e === 'change') {
+            console.log(`hit`)
+            socket.emit('save')
+        }
     })
 })
