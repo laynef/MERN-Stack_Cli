@@ -40,7 +40,7 @@ var CreateCommand = function(name) {
         "babel-preset-react": "^6.16.0",
         "css-loader": "^0.26.0",
         "extract-text-webpack-plugin": "^1.0.1",
-        "mysql": "^2.12.0",
+        "html-loader": "^0.4.4",
         "node-sass": "^3.13.0",
         "nodemon": "^1.11.0",
         "sass-loader": "^4.0.2",

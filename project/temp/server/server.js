@@ -46,7 +46,6 @@ app.use('/api', routes) // when you add api routes in routes.js
 io.on('connection', (socket) => {
     fs.watch(__dirname + '/../', {recursive: true}, (e, o) => {
         if (e === 'rename' || e === 'change') {
-            console.log(`hit`)
             socket.emit('save')
         }
     })
