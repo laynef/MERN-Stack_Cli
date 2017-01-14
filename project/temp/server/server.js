@@ -38,7 +38,13 @@ db.once('open', () => {
 })
 
 // Render the index.html
-app.get('/', (req, res) => { res.sendFile('index.html') })
+app.get('/', (req, res) => { 
+    res.sendFile('index.html') 
+})
+
+app.get('*', (req, res) => {
+    res.redirect('/')
+})
 
 app.use('/api', routes) // when you add api routes in routes.js
 

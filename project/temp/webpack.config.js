@@ -32,6 +32,9 @@ module.exports = {
             }
         ]
     },
+    resolve: {
+      extensions: ['', '.js', '.jsx', '.scss', '.css']
+    },
     htmlLoader: {
         ignoreCustomFragments: [/\{\{.*?}}/],
         root: path.resolve(__dirname + '/public'),
