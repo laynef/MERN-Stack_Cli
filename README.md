@@ -10,18 +10,19 @@
 
 ## Installation
 
-`npm install -g rens-stack-cli`<br>
+`npm install -g mern-stack-cli`<br>
 `mern runs` <br>
 `mern create <project-name-here>` <br>
 `cd <project-name-here>` <br>
 `npm install` <br>
-`Add MongoDB Connection in config.js` <br>
+`Add MongoDB Connection in config.js I use MLAB` <br>
 `npm start` <br>
 
 ## Make Empty Component
 
 `cd <your-project-here>` <br>
 `mern make <your-component-name-here>` <br>
+`mern page <your-page-name-here>` <br>
 
 ## Make Empty Page
 
