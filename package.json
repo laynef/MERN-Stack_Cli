@@ -1,7 +1,7 @@
 {
   "name": "mern-stack-cli",
-  "version": "1.4.3",
-  "description": "A RENS Stack Cli",
+  "version": "1.4.4",
+  "description": "A MERN Stack Cli",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/laynefaler/MERN-Stack_Cli.git"
