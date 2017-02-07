@@ -14,9 +14,9 @@ const session = require('express-session')
 const fs = require('fs')
 
 // port settings
-let port = process.env.PORT || 3000
+let port = process.env.PORT || 3333
 
-// web socket protocol on localhost on port 4200
+// web socket protocol on localhost on port 3333
 server.listen(port, () => {
     console.log(`Listen to http://localhost:${port}`)
 })

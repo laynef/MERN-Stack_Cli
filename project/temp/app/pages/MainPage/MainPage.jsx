@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {Component} from 'react'
+import {connect} from 'react-redux'
 
 import Greeting from '../../components/greeting/Greeting'
 
-export default class MainPage extends React.Component {
+class MainPage extends Component {
 
     constructor(props, context) {
         super(props, context)
@@ -16,3 +17,6 @@ export default class MainPage extends React.Component {
             )
         }
 }
+
+export default connect(state => {
+})(MainPage)

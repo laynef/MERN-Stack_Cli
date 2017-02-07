@@ -21,20 +21,20 @@ var CreateCommand = function(name) {
     var file = './' + name + '/package.json';
 
     var obj = {
-      "name": ProjectName,
-      "version": "1.0.0",
-      "description": "",
-      "scripts": {
-        "start": "nodemon ./server/server.js",
-        "build:pro": "webpack -p",
-        "postinstall": "webpack",
-        "build": "webpack -w"
-      },
-      "keywords": [],
-      "author": "",
-      "license": "ISC",
-      "devDependencies": {
-        "babel-core": "^6.18.2",
+    "name": ProjectName,
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+      "start": "nodemon ./server/server.js",
+      "build:pro": "webpack -p",
+      "postinstall": "webpack",
+      "build": "webpack -w"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "babel-core": "^6.18.2",
       "babel-loader": "^6.2.8",
       "babel-plugin-transform-runtime": "^6.15.0",
       "babel-preset-es2015": "^6.18.0",
@@ -69,11 +69,13 @@ var CreateCommand = function(name) {
       "react-dom": "^15.4.1",
       "react-redux": "^4.4.6",
       "react-router": "^3.0.0",
+      "react-router-bootstrap": "^0.23.1",
       "redux": "^3.6.0",
       "redux-form": "^6.3.2",
       "redux-logger": "^2.6.1",
       "redux-promise": "^0.5.3",
       "redux-thunk": "^2.1.0",
+      "rxjs": "^5.1.0",
       "socket.io": "^1.7.1"
       }
     };
